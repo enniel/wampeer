@@ -21,7 +21,7 @@
         }
     ],
     "require": {
-        "php": "~5.4|~7.0",
+        "php": ">=5.5.9",
         "illuminate/support": "~5.1",
         "illuminate/console": "~5.1",
         "voryx/thruway": "~0.4"
