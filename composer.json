@@ -1,0 +1,46 @@
+{
+    "name": "enniel/wampeer",
+    "type": "library",
+    "description": "Provide thruway library to laravel",
+    "keywords": [
+        "Enniel",
+        "Wampeer",
+        "WebSockets",
+        "Server",
+        "Client",
+        "WAMP",
+        "WAMP2",
+        "Autobahn",
+        "Sockets"
+    ],
+    "homepage": "https://github.com/Enniel/Wampeer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Enniel"
+        }
+    ],
+    "require": {
+        "php": "~5.4|~7.0",
+        "illuminate/support": "~5.1",
+        "illuminate/console": "~5.1",
+        "voryx/thruway": "~0.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "~4.0||~5.0",
+        "orchestra/testbench": "~3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Enniel\\Wampeer\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Enniel\\Wampeer\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
