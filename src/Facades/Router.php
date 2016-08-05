@@ -4,6 +4,7 @@ namespace Enniel\Wampeer\Facades;
 
 use Illuminate\Support\Facades\Facade;
 use Thruway\Peer\RouterInterface;
+
 /**
  * @see \Thruway\Peer\RouterInterface
  */

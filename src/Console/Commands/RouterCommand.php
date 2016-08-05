@@ -26,7 +26,7 @@ class RouterCommand extends Command
     /**
      * Execute the console command.
      *
-     * @param  RouterInterface $router
+     * @param RouterInterface $router
      *
      * @return mixed
      */

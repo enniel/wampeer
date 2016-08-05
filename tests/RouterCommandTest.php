@@ -2,10 +2,10 @@
 
 namespace Enniel\Wampeer\Tests;
 
+use Enniel\Wampeer\Facades\Router;
 use Illuminate\Support\Facades\Artisan;
 use Thruway\Transport\RatchetTransportProvider;
 use Thruway\Transport\RawSocketTransportProvider;
-use Enniel\Wampeer\Facades\Router;
 
 class RouterCommandTest extends TestCase
 {
@@ -25,7 +25,7 @@ class RouterCommandTest extends TestCase
     }
 
     /**
-     * Test starting command
+     * Test starting command.
      */
     public function testStartCommand()
     {

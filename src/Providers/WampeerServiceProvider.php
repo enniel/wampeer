@@ -2,12 +2,12 @@
 
 namespace Enniel\Wampeer\Providers;
 
-use Illuminate\Support\ServiceProvider;
-use Thruway\Peer\RouterInterface;
-use Thruway\Peer\Router;
-use React\EventLoop\LoopInterface;
-use React\EventLoop\Factory;
 use Enniel\Wampeer\Console\Commands\RouterCommand;
+use Illuminate\Support\ServiceProvider;
+use React\EventLoop\Factory;
+use React\EventLoop\LoopInterface;
+use Thruway\Peer\Router;
+use Thruway\Peer\RouterInterface;
 
 class WampeerServiceProvider extends ServiceProvider
 {
@@ -31,10 +31,10 @@ class WampeerServiceProvider extends ServiceProvider
     public function register()
     {
         $this->registerConfig();
-        $this->app->singleton(LoopInterface::class, function() {
-            return (new Factory)->create();
+        $this->app->singleton(LoopInterface::class, function () {
+            return (new Factory())->create();
         });
-        $this->app->singleton(RouterInterface::class, function($app) {
+        $this->app->singleton(RouterInterface::class, function ($app) {
             return new Router($app->make(LoopInterface::class));
         });
         $this->app->singleton('command.wampeer.router.start', function ($app) {
@@ -44,8 +44,8 @@ class WampeerServiceProvider extends ServiceProvider
     }
 
     /**
-      * Register the configuration.
-      */
+     * Register the configuration.
+     */
     protected function registerConfig()
     {
         $this->mergeConfigFrom(realpath(__DIR__.'/../../config/wampeer.php'), 'wampeer');
