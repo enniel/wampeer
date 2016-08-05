@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/enniel/wampeer.svg?branch=master)](https://travis-ci.org/enniel/wampeer)
+
 # Wampeer
 
 ## Composer
