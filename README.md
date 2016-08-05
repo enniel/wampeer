@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/enniel/wampeer.svg?branch=master)](https://travis-ci.org/enniel/wampeer)
-
+[![StyleCI](https://styleci.io/repos/65004698/shield)](https://styleci.io/repos/65004698)
 # Wampeer
 
 ## Composer
