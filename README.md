@@ -28,3 +28,17 @@ You can use the facade for shorter code. Add this to your aliases:
 ```
 
 Then publish assets with `php artisan vendor:publish`. This will add the file `config/wampeer.php`. 
+
+## Usage
+
+Set up code in the boot method at your provider
+
+```
+WampRouter::registerModules([
+    // Websocket listener
+    new RatchetTransportProvider(),
+    // Rawsocket listener
+    new RawSocketTransportProvider(),
+]);
+WampRouter::addInternalClient(new SimpleAuthProviderClient(["testSimpleAuthRealm", "authful_realm"]));
+```
